@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage{
+        stage("testing"){
             steps{
                 echo "hello sai, welcome to devops"
                 sh '''
