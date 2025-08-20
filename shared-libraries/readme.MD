@@ -26,7 +26,7 @@ As Pipeline is adopted for more and more projects in an organization, common pat
 - Manage jenkins --> configure system --> global pipeline libraries --> library_name, branch_name, retrival_method --> modern SCM --> Git repo etc --> save
 
 
-## Ways to use Shared libraries:
+## Ways to use Shared libraries: 
 
 ``` groovy
 @Library('my-shared-library') _
