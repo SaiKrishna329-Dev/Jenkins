@@ -14,9 +14,9 @@ pipeline{
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
 
-    // triggers {
-    //     cron('H/5 * * * *')
-    // }
+    triggers {
+        cron('H/5 * * * *')
+    }
 
     environment {
         user_name = 'ubuntu'
