@@ -1,0 +1,15 @@
+
+
+// @library('library_name_mentioned_jenkins_configure') _
+
+@library('my_shared_library') _
+pipeline{
+    agent any
+    stages{
+        stage('checkout'){
+            steps{
+                helloWorld()
+            }
+        }
+    }
+}
