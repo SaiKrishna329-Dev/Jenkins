@@ -18,6 +18,14 @@ pipeline{
                 '''    
             }
         }
+        stage("another-stage"){
+            steps{
+                echo "This is another stage"
+                sh '''
+                    echo "Running another stage"
+                    date
+                '''
+            }
     }
     
     post{
