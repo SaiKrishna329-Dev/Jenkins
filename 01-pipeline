@@ -3,8 +3,10 @@ pipeline{
     stages{
         stage("testing"){
             steps{
-                echo "hello sai, welcome to devops"
+                
                 sh '''
+                    echo "hello sai, welcome to devops"
+                    pwd
                     ls -ltrh
                     free -h
                 '''    
