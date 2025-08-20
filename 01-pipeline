@@ -1,0 +1,30 @@
+pipeline{
+    agent {node (label, 'Agent-1')}
+    options{
+        ansiColor{'xterm'}
+    }
+
+    stages{
+        stage{
+            steps{
+                echo "hello sai, welcome to devops"
+                sh '''
+                    ls -ltrh
+                    free -h
+                '''    
+            }
+        }
+    }
+    
+    post{
+        always{
+            i will execute this job whetehre its success or failure
+        }
+        success{
+            i will execute this job when success
+        }
+        failure{
+            i will execute this job when failure
+        }
+    }
+}
