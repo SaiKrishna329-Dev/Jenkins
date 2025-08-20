@@ -14,13 +14,13 @@ pipeline{
     
     post{
         always{
-            i will execute this job whetehre its success or failure
+            echo "i will execute this job whetehre its success or failure"
         }
         success{
-            i will execute this job when success
+            echo "i will execute this job when success"
         }
         failure{
-            i will execute this job when failure
+            echo "i will execute this job when failure"
         }
     }
 }
